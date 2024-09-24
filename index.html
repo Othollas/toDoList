@@ -1,0 +1,71 @@
+<!-- #### **Exercice 1 : JavaScript - Manipulation du DOM**
+Crée une petite page web où tu as une liste de tâches à faire (to-do list). En JavaScript :
+- Permets à l'utilisateur d'ajouter de nouvelles tâches.
+- Ajoute une fonctionnalité pour marquer une tâche comme "complète".
+- Ajoute une option pour supprimer une tâche. -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>to do list</h1>
+
+
+
+    <div class="newEntry">
+        <label for="newThing">Ajouter une tache : </label>
+        <input type="text" name="newthing" id="newThing">
+        <button class="btnEntry">ajouter</button>
+    </div>
+
+    <h2>Tache à effectuer</h2>
+
+    <div class="onglet">
+     <ul>
+        <li class="selected">course</li>
+        <li>administratif</li>
+        <li>reparation</li>
+        <li>divers</li>
+   
+     </ul>
+    </div>
+
+    <section id="course" class="">
+        <h3>course</h3>
+        <div class="newTask">
+        </div>
+    </section>
+
+    <section id="administratif" class="hidden">
+        <h3>administratif</h3>
+        <div class="newTask">
+        </div>
+    </section>
+
+    <section id="reparation" class="hidden">
+        <h3>reparation</h3>
+        <div class="newTask">
+        </div>
+    </section>
+
+    <section id="divers" class="hidden">
+        <h3>divers</h3>
+        <div class="newTask">
+        </div>
+    </section>
+
+   
+
+
+
+</body>
+<script type="module" src="script.js"></script>
+</html>
